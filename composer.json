@@ -1,0 +1,11 @@
+{
+    "name": "marcin228/same-api-different-day",
+    "description": "Simple PHP REST API implementation.",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Marcin228\\SameApiDifferentDay\\": "src/"
+        }
+    },
+    "require": {}
+}
