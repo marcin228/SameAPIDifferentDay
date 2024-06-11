@@ -7,5 +7,7 @@
             "Marcin228\\SameApiDifferentDay\\": "src/"
         }
     },
-    "require": {}
+    "require": {
+        "mongodb/mongodb": "^1.19"
+    }
 }
