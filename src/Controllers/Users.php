@@ -1,13 +1,14 @@
 <?php
-    
+
+    namespace src\controllers;
+
     require_once __DIR__ . './../vendor/autoload.php';
 
-    use Src\Controllers\IController;
-    use Src\Data\IStorage;
-
+    use src\Controllers\IController;
+    use src\Data\IStorage;
     class Users implements IController{
         private IStorage $storage;
-        public function __constructor(IStorage $storage){
+        public function __construct(IStorage $storage){
 
             $this->storage = $storage;
         }

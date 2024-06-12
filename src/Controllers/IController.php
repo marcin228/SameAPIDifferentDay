@@ -1,6 +1,6 @@
 <?php 
 
-    namespace Src\Controllers;
+    namespace src\controllers;
     interface IController{
 
         public function getOne(int $id);

@@ -1,6 +1,6 @@
 <?php
 
-    namespace Src\Data;
+    namespace src\data;
     interface IStorage{
         public function getOne(int $id);
         public function getAll();

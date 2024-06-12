@@ -1,39 +1,43 @@
 <?php
-class Router{
 
-    private array $routes;
-    private string $method;
-    private string $uri;
+    namespace src\router;
 
-    public function __constructor(string $method, string $uri){
+    use src\controllers\Users;
+    class Router{
 
-        $this->method = $method;
-        $this->uri = $uri;
-    }
-    public function resolve(){
+        private array $routes;
+        private string $method;
+        private string $uri;
 
-        match($this->method){
-            'get', 'GET' => $this->resolveGet(),
-            'post', 'POST' => $this->resolvePost(),
-            'put', 'PUT' => $this->resolvePut(),
-            'delete', 'DELETE' => $this->resolveDelete(),
-            default => throw new Throwable()
+        public function __construct(string $method, string $uri){
+
+            $this->method = $method;
+            $this->uri = $uri;
+        }
+        public function resolve(){
+
+            /*
+            match($this->method){
+                'get', 'GET' => $this->resolveGet(),
+                'post', 'POST' => $this->resolvePost(),
+                'put', 'PUT' => $this->resolvePut(),
+                'delete', 'DELETE' => $this->resolveDelete()
+            }
+            */
+        }
+        private function resolveGet(){
+        }
+
+        private function resolvePost(){
+        }
+
+        private function resolvePut(){
+        }
+
+        private function resolveDelete(){
+        }
+        private function register(string $requestMethod, string $route, $controller, callable $method){
+
+            $this->routes[] = new Route($requestMethod, $route, Users::class, 'getAll');
         }
     }
-
-    private function resolveGet(){
-    }
-
-    private function resolvePost(){
-    }
-
-    private function resolvePut(){
-    }
-    
-    private function resolveDelete(){
-    }
-    private function register(string $requestMethod, string $route, $controller, callable $method){
-
-        $this->routes[] = new Route($requestMethod, $route, 'Users', 'getAll');
-    }
-}
