@@ -1,11 +1,9 @@
 <?php
 
-    namespace src\controllers;
+    namespace sameApiDifferentDay\controllers;
 
-    require_once __DIR__ . './../vendor/autoload.php';
-
-    use src\Controllers\IController;
-    use src\Data\IStorage;
+    use sameApiDifferentDay\controllers\IController;
+    use sameApiDifferentDay\data\IStorage;
     class Users implements IController{
         private IStorage $storage;
         public function __construct(IStorage $storage){

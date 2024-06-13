@@ -4,7 +4,9 @@
     "type": "project",
     "autoload": {
         "psr-4": {
-            "Marcin228\\SameApiDifferentDay\\php\\src": "src/"
+            "sameApiDifferentDay\\controllers\\": "src/controllers",
+            "sameApiDifferentDay\\data\\": "src/data",
+            "sameApiDifferentDay\\router\\": "src/router"
         }
     },
     "require": {

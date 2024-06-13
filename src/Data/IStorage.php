@@ -1,6 +1,6 @@
 <?php
 
-    namespace src\data;
+    namespace sameApiDifferentDay\data;
     interface IStorage{
         public function getOne(int $id);
         public function getAll();

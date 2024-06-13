@@ -1,8 +1,8 @@
 <?php
 
-    namespace src\router;
+    namespace sameApiDifferentDay\router;
 
-    use src\controllers\Users;
+    use sameApiDifferentDay\controllers\Users;
     class Router{
 
         private array $routes;
@@ -38,6 +38,6 @@
         }
         private function register(string $requestMethod, string $route, $controller, callable $method){
 
-            $this->routes[] = new Route($requestMethod, $route, Users::class, 'getAll');
+            //$this->routes[] = new Route($requestMethod, $route, Users::class, 'getAll');
         }
     }

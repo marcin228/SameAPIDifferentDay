@@ -1,9 +1,9 @@
 <?php
 
-    require_once __DIR__ . './../vendor/autoload.php';
+    namespace sameApiDifferentDay\data;
 
-    use Src\Data\IStorage;
-    use Src\Data\PDOStorage;
+    use sameApiDifferentDay\data\IStorage;
+    use sameApiDifferentDay\data\PDOStorage;
     class PDOUsers extends PDOStorage implements IStorage{
     
         public function getOne(int $id){

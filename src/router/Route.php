@@ -1,8 +1,8 @@
 <?php
 
-    namespace src\router;
+    namespace sameApiDifferentDay\router;
 
-    use src\controllers\IController;
+    use sameApiDifferentDay\controllers\IController;
     class Route{
         private string $requestMethod;
         private string $path;

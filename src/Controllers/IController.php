@@ -1,6 +1,6 @@
 <?php 
 
-    namespace src\controllers;
+    namespace sameApiDifferentDay\controllers;
     interface IController{
 
         public function getOne(int $id);

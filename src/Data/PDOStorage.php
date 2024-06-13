@@ -1,6 +1,6 @@
 <?php
 
-    namespace src\data;
+    namespace sameApiDifferentDay\data;
     class PDOStorage{
         public function __construct(){
         }
