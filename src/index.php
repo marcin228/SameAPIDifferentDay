@@ -5,8 +5,6 @@
     use sameApiDifferentDay\router\Router;
     use sameApiDifferentDay\data\MongoDBUsers;
 
-    echo 'SCRIPT WORKING';
-
     $uri = $_SERVER['REQUEST_URI'];
     $method = $_SERVER['REQUEST_METHOD'];
 
