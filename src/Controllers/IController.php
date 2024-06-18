@@ -2,7 +2,6 @@
 
     namespace sameApiDifferentDay\controllers;
     interface IController{
-
         public function getOne(int $id);
         public function getAll();
         public function create(array $arr);

@@ -2,9 +2,9 @@
 
     namespace sameApiDifferentDay\data;
 
-    use sameApiDifferentDay\data\IStorage;
+    use sameApiDifferentDay\controllers\IController;
     use sameApiDifferentDay\data\PDOStorage;
-    class PDOUsers extends PDOStorage implements IStorage{
+    class PDOUsers extends PDOStorage implements IController{
     
         public function getOne(int $id){
         

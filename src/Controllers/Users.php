@@ -3,10 +3,10 @@
     namespace sameApiDifferentDay\controllers;
 
     use sameApiDifferentDay\controllers\IController;
-    use sameApiDifferentDay\data\IStorage;
+
     class Users implements IController{
-        private IStorage $storage;
-        public function __construct(IStorage $storage){
+        private IController $storage;
+        public function __construct(IController $storage){
 
             $this->storage = $storage;
         }

@@ -2,9 +2,9 @@
 
     namespace sameApiDifferentDay\data;
     
-    use sameApiDifferentDay\data\IStorage;
+    use sameApiDifferentDay\controllers\IController;
     use sameApiDifferentDay\data\MongoDBStorage;
-    class MongoDBUsers extends MongoDBStorage implements IStorage{
+    class MongoDBUsers extends MongoDBStorage implements IController{
     
         public function getOne(int $id){
 
