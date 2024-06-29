@@ -31,7 +31,7 @@
 
             for($i = 0, $l = count($this->routes); $i < $l; $i++){
                 if($this->routes[$i]->find('get', $route)){
-                    $this->routes[$i]->execRoute();
+                    echo $this->routes[$i]->execRoute();
                     break;
                 }
             }

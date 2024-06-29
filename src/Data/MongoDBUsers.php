@@ -11,17 +11,17 @@
         }
         public function getAll(){
 
+            $result = [];
+
             $db = $this->getHandle()->database;
             $collection = $db->Users;
 
             $cursor = $collection->find();
 
-            foreach ($cursor as $document){
-                foreach($document as $key => $value){
+            foreach ($cursor as $document)
+                array_push($result, $document);
 
-                    echo $key . ' -> ' . $value . PHP_EOL;
-                }
-            }
+            return json_encode($result);
         }
         public function create(array $arr){
         

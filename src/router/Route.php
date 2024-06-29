@@ -26,7 +26,7 @@
             return false;
         }
 
-        public function execRoute():void{
+        public function execRoute(){
 
             return $this->controller->{$this->methodInController}();
         }

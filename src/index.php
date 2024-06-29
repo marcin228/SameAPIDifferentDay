@@ -20,8 +20,6 @@
 
     $router = new Router($method, $uri);
 
-    echo 'SERVER LIVE.';
-
     $router->register('get', '/users', MongoDBUsers::class, 'getAll');
     $router->register('post', '/users', MongoDBUsers::class, 'getAll');
 
