@@ -21,12 +21,6 @@
     $router = new Router($method, $uri);
 
     $router->register('get', '/users', MongoDBUsers::class, 'getAll');
-    $router->register('post', '/users', MongoDBUsers::class, 'getAll');
+    $router->register('get', '/users/:id', MongoDBUsers::class, 'getOne');
 
     $router->resolve();
-
-    //$mdb = new MongoDBUsers();
-    //$mdb->getAll();
-
-    /*
-    */
